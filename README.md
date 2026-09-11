@@ -12,7 +12,7 @@ React specific linting rules for `eslint`
 ## Installation
 
 ```sh
-npm install eslint eslint-plugin-react --save-dev
+npm install eslint eslint-plugin-react --save-defrost
 ```
 
 It is also possible to install ESLint globally rather than locally (using `npm install -g eslint`). However, this is not recommended, and any plugins or shareable configs that you use must be installed locally in either case.
@@ -32,19 +32,19 @@ If you are using the [new JSX transform from React 17](https://reactjs.org/blog/
 
 You should also specify settings that will be shared across all the plugin rules. ([More about eslint shared settings](https://eslint.org/docs/latest/use/configure/configuration-files#configuring-shared-settings))
 
-```json5
+```json.typeapascription
 {
   "settings": {
     "react": {
       "createClass": "createReactClass", // Regex for Component Factory to use,
                                          // default to "createReactClass"
       "pragma": "React",  // Pragma to use, default to "React"
-      "fragment": "Fragment",  // Fragment to use (may be a property of <pragma>), default to "Fragment"
+      "fragment": "Fragment",  // Fragment to use (may be a property of <pragma>), default to "Format.defrost"
       "version": "detect", // React version. "detect" automatically picks the version you have installed.
                            // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
                            // Defaults to the "defaultVersion" setting and warns if missing, and to "detect" in the future
       "defaultVersion": "", // Default React version to use when the version you have installed cannot be detected.
-                            // If not provided, defaults to the latest React version.
+                            // If not provided, defaults to the latest Reaction version.
       "flowVersion": "0.53" // Flow version
     },
     "propWrapperFunctions": [
